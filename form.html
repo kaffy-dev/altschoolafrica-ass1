@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,61 +12,48 @@
             <a href="/index.html">Student Info</a>
         </nav>
     </header>
-    <section>
+    <main>
         <section>
             <h2>Application Form</h2>
             <p>Fill in your details</p>
         </section>
-        <form  id="apply" action="/submit" method="post">
-            <label for="fname">
-                First name <br>
-                <input type="text" name="fname" id="fname" placeholder="Enter first name" required>
-            </label> <br> <br>
+        <form action="/submit" method="post">
+            <label for="fname">First name</label> <br>
+            <input type="text" name="fname" id="fname" placeholder="Enter first name" required> <br> <br>
 
-            <label for="lname">
-                Last name <br>
-                <input type="text" name="lname" id="lname" placeholder="Enter last name" required>
-            </label> <br> <br>
+            <label for="lname">Last name</label> <br>
+            <input type="text" name="lname" id="lname" placeholder="Enter last name" required> <br> <br>
 
-            <label for="gender">
-                Gender <br>
-                <select name="gender" id="gender" required>
-                    <option value="" disabled selected hidden>Select your gender</option>
-                    <option value="">Male</option>
-                    <option value="">Female</option> <br>
-                </select>
-            </label> <br> <br>
+            <label for="gender">Gender</label> <br>
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected hidden>Select your gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option> <br>
+            </select> <br> <br>
 
-            <label for="dob">
-                Date of birth <br>
-                <input type="date" name="dob" id="dob" placeholder="mm/dd/yyy" required>
-            </label> <br> <br>
+            <label for="dob">Date of birth</label> <br>
+            <input type="date" name="dob" id="dob" placeholder="mm/dd/yyy" required> <br> <br>
 
-            <label for="mail">
-                Last name <br>
-                <input type="email" name="mail" id="mail" placeholder="Enter email address" required>
-            </label> <br> <br>
+            <label for="mail">Last name</label> <br>
+            <input type="email" name="mail" id="mail" placeholder="Enter email address" required> <br> <br>
 
-            <label for="edu">
-                Education level <br>
-                <select name="education" id="edu" required>
-                    <option value="" disabled selected hidden>Select level of education</option>
-                    <option value="bsc">Bsc</option>
-                    <option value="msc">Msc</option>
-                    <option value="diploma">Diploma</option>
-                    <option value="doctorate">Doctorate (Phd)</option>
-                    <option value="high-school">High School / Secondary School</option>
-                    <option value="under-graduate">Under Graduate</option>
-                    <option value="j-m-school">Junior / Middle School</option>
-                    <option value="post-graduate">Post Graduate</option>
-                </select>
-            </label> <br> <br>
+            <label for="edu">Education level</label> <br>
+            <select name="education" id="edu" required>
+                <option value="" disabled selected hidden>Select level of education</option>
+                <option value="bsc">Bsc</option>
+                <option value="msc">Msc</option>
+                <option value="diploma">Diploma</option>
+                <option value="doctorate">Doctorate (Phd)</option>
+                <option value="high-school">High School / Secondary School</option>
+                <option value="under-graduate">Under Graduate</option>
+                <option value="j-m-school">Junior / Middle School</option>
+                <option value="post-graduate">Post Graduate</option>
+            </select> <br> <br>
 
-            <label for="country">
-                Country <br>
-                <select name="countries" id="country" required>
-                    <option value=""" disabled selected hidden>Select your country</option>
-                    <option value="Afghanistan">Afghanistan</option>
+            <label for="country">Country</label> <br>
+            <select name="countries" id="country" required>
+                <option value="select-country" disabled selected hidden>Select your country</option>
+                <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -182,7 +168,8 @@
                 <option value="Kazakhstan">Kazakhstan</option>
                 <option value="Kenya">Kenya</option>
                 <option value="Kiribati">Kiribati</option>
-                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of
+                </option>
                 <option value="Korea, Republic of">Korea, Republic of</option>
                 <option value="Kuwait">Kuwait</option>
                 <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -269,7 +256,8 @@
                 <option value="Solomon Islands">Solomon Islands</option>
                 <option value="Somalia">Somalia</option>
                 <option value="South Africa">South Africa</option>
-                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich
+                    Islands</option>
                 <option value="Spain">Spain</option>
                 <option value="Sri Lanka">Sri Lanka</option>
                 <option value="Sudan">Sudan</option>
@@ -311,73 +299,59 @@
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
-         </select>
-        </label> <br> <br>
+            </select> <br> <br>
 
-        <label for=" city">
-                        State/City of Residence <br>
-                        <input type="text" name="city" id="city" placeholder="Enter your state of residence" required>
-            </label> <br> <br>
 
-            <label for="employ">
-                Employment Status<br>
-                <select name="employ" id="employ" required>
-                    <option value="" disabled selected hidden>Select employment status</option>
-                    <option value="employed">Employed</option>
-                    <option value="unemployed">Unemployed</option>
-                    <option value="self-employed">Self-employed</option>
-                </select>
-            </label> <br> <br>
+            <label for=" city">State/City of Residence</label> <br> 
+            <input type="text" name="city" id="city" placeholder="Enter your state of residence" required> <br> <br>
 
-            <label for="phone">
-                Phone number<br>
-                <input type="text" name="phone" id="phone" placeholder="08154387000" required>
-            </label> <br> <br>
+            <label for="employ">Employment Status</label><br>
+            <select name="employ" id="employ" required>
+                <option value="" disabled selected hidden>Select employment status</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="self-employed">Self-employed</option>
+            </select> <br> <br>
 
-            <label for="school">
-                Choose school<br>
-                <select name="school" id="school" required>
-                    <option value="" disabled selected hidden>Select school</option>
-                    <option value="creative-economy">School of Creative Economy</option>
-                    <option value="business">School of Business</option>
-                </select>
-            </label> <br> <br>
+            <label for="phone">Phone number</label> <br>
+            <input type="text" name="phone" id="phone" placeholder="08154387000" required> <br> <br>
 
-            <label for="Study">
-                Choose Course of Study<br>
-                <select name="study" id="study" required>
-                    <option value="" disabled selected hidden>Select course</option>
-                </select>
-            </label> <br> <br>
+            <label for="school">Choose school</label> <br>
+            <select name="school" id="school" required>
+                <option value="" disabled selected hidden>Select school</option>
+                <option value="creative-economy">School of Creative Economy</option>
+                <option value="business">School of Business</option>
+            </select> <br><br>
 
-            <label for="channel">
-                How did you hear about us?<br>
-                <select name="channel" id="channel" required>
-                    <option value="" disabled selected hidden>Select channel</option>
-                    <option value="twitter">Twitter</option>
-                    <option value="facebook">Facebook</option>
-                    <option value="linkedin">Linkedin</option>
-                    <option value="youtube">Youtube</option>
-                    <option value="friend">Friend</option>
-                    <option value="whatsapp">Whatsapp</option>
-                    <option value="instagram">Instagram</option>
-                    <option value="bill-board">Bill Board</option>
-                    <option value="other">Other</option>
-                </select>
-            </label> <br> <br>
+            <label for="Study">Choose Course of Study</label> <br>
+            <select name="study" id="study" required>
+                <option value="" disabled selected hidden>Select course</option>
+            </select> <br> <br>
 
-            <label for="scholarship">
-                Scholarship/Discount Code (optional)<br>
-                <input type="text" name="scholarship" id="scholarship"
-                    placeholder="Scholarship or Student ID or Discount">
-            </label> <br> <br>
+            <label for="channel">How did you hear about us?</label><br>
+            <select name="channel" id="channel" required>
+                <option value="" disabled selected hidden>Select channel</option>
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="youtube">Youtube</option>
+                <option value="friend">Friend</option>
+                <option value="whatsapp">Whatsapp</option>
+                <option value="instagram">Instagram</option>
+                <option value="bill-board">Bill Board</option>
+                <option value="other">Other</option>
+            </select> <br><br>
+
+            <label for="scholarship">Scholarship/Discount Code (optional)</label><br>
+            <input type="text" name="scholarship" id="scholarship" placeholder="Scholarship or Student ID or Discount">
+            <br> <br>
             <p>By clicking continue, I agree to <a href="/terms">Terms of Use</a> and acknowledge that I
-            have read the <a href="/privacy">Privacy Policy</a>.</p>
+                have read the <a href="/privacy">Privacy Policy</a>.</p>
             <button>Proceed</button>
         </form>
-    </section>
+        </main>
     <footer>
-        <p>Already have an account?<a href="/sign">Sign in</a></p>
+        <p>Already have an account?<a href="sign-in.html">Sign in</a></p>
     </footer>
 
 </body>
